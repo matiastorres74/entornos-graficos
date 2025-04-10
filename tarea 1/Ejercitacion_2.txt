@@ -1,0 +1,105 @@
+2.a) Comentario HTML
+<!-- Código controlado el día 12/08/2009 →
+Sección: Puede ir en cualquier parte del documento.
+
+Efecto: No tiene efecto visual, solo es un comentario.
+
+Elementos y Atributos: <!-- --> (sin atributos, solo contenido dentro del comentario).
+
+Obligatorio: No es obligatorio.
+2.b)
+<!--
+<div id="bloque1">Contenido del bloque1</div>
+
+**Es un contenedor generico HTML con un identificador único**
+
+Sección: Dentro del <body>.
+
+Efecto: Agrupa contenido visual. El id puede ser utilizado para estilos o comportamientos específicos.
+
+Elementos y Atributos:
+
+  Etiqueta: <div>
+  Atributos: id="bloque1"
+  Obligatorio: id no es obligatorio, pero si se usa debe ser único.
+
+2.c)
+<img src="" alt="lugar imagen" id="im1" name="im1" width="32" height="32"
+longdesc="detalles.htm" />
+Sección: Dentro del <body>.
+
+Efecto: Muestra una imagen en la página. El texto alternativo es útil para accesibilidad. El tamaño y los detalles de la imagen están definidos.
+
+Elementos y Atributos:
+
+  Etiqueta: <img>
+  Atributos: src="", alt="lugar imagen", id="im1", name="im1", width="32", height="32", longdesc="detalles.htm"
+  Obligatorio: src y alt son obligatorios; id y width/height no lo son, pero son útiles.
+
+2.d)
+<meta name="keywords" lang="es" content="casa, compra, venta, alquiler " />
+<meta http-equiv="expires" content="16-Sep-2019 7:49 PM" />
+Sección: En el <head> del documento.
+
+Efecto: El primer <meta> ayuda con la optimización en motores de búsqueda (SEO), y el segundo establece cuándo expira el contenido.
+
+Elementos y Atributos:
+
+    Etiqueta: <meta>
+    Atributos: name="keywords", lang="es", content="casa, compra, venta, alquiler", http-equiv="expires", content="16-Sep-2019 7:49 PM".
+    Obligatorio: No es obligatorio, pero son útiles para SEO y control de caché.
+
+2.e)
+<a href="http://www.e-style.com.ar/resumen.html" type="text/html" hreflang="es" charset="utf-8"
+rel="help">Resumen HTML </a>
+Sección: Dentro del <body>.
+
+Efecto: Crea un enlace que redirige al usuario a la página resumen.html en el sitio www.e-style.com.ar. El enlace está etiquetado como un recurso de ayuda en español.
+
+Elementos y Atributos:
+
+  Etiqueta: <a>
+  Atributos: href="http://www.e-style.com.ar/resumen.html", type="text/html", hreflang="es", charset="utf-8", rel="help".
+  Obligatorio: Solo el atributo href es obligatorio para un enlace funcional.
+
+
+
+2.f)
+<table width="200" summary="Datos correspondientes al ejercicio vencido">
+<caption align="top"> Título </caption>
+<tr>
+<th scope="col">&nbsp;</th>
+<th scope="col">A</th>
+<th scope="col">B</th>
+<th scope="col">C</th>
+</tr>
+<tr>
+<th scope="row">1º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<th scope="row">2º</th>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</table>
+Sección: Dentro del <body>.
+
+Efecto: Crea una tabla con un título (caption) y celdas de datos organizadas en filas y columnas.
+
+Elementos y Atributos:
+
+  Etiqueta: <table>
+  Atributos: width="200", summary="Datos correspondientes al ejercicio vencido"
+  Etiqueta: <caption>
+  Atributos: align="top"
+  Etiqueta: <tr>
+  Etiqueta: <th>
+  Atributos: scope="col", scope="row"
+  Etiqueta: <td>
+  Obligatorio: Los atributos width y summary no son obligatorios, pero son útiles para la accesibilidad y la presentación.
+
+-->

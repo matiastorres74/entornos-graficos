@@ -1,0 +1,26 @@
+1. ¿Ventajas de HTML5?
+2. ¿Por qué utilizarlo?
+3. Nombre ventajas
+
+1) Dentro de las ventajas de HTML5 tenemos:
+  Soporte multimedia nativo: HTML5 introduce elementos como <video> y <audio>, que permiten integrar multimedia (videos y audios) directamente en las páginas web sin necesidad de complementos como Flash.
+  Mayor compatibilidad móvil: HTML5 está diseñado teniendo en cuenta la compatibilidad con dispositivos móviles. Ofrece soporte para aplicaciones web móviles sin necesidad de plugins o aplicaciones nativas.
+  Nuevas APIs: HTML5 incluye nuevas APIs para mejorar la interactividad de las páginas web, como la API de geolocalización, la API de almacenamiento local (localStorage), la API de arrastrar y soltar, y la API de canvas, entre otras.
+  Mejor soporte para aplicaciones web: Permite la creación de aplicaciones web más ricas y dinámicas gracias a nuevas herramientas y características como WebSockets, almacenamiento local, y el historial del navegador mejorado.
+  Semántica mejorada: HTML5 introduce nuevos elementos semánticos como <article>, <section>, <nav>, <header>, <footer>, y otros que permiten estructurar mejor el contenido de las páginas y mejorar su accesibilidad.
+  Mayor rendimiento: HTML5 está optimizado para mejorar el rendimiento, por ejemplo, en la carga de multimedia o en la ejecución de aplicaciones complejas.
+  Compatible con la mayoría de navegadores modernos: HTML5 es compatible con la mayoría de los navegadores modernos, lo que permite a los desarrolladores evitar el uso de complementos de terceros como Flash o Silverlight.
+
+2) Utilizar HTML5 ofrece varios beneficios tanto para los desarrolladores como para los usuarios finales, entre los que podemos destacar:
+compatibilidad moderna, mejora de la experiencia de usuario, accesibilidad mejorada, desarrollo más eficiente y optimización para móviles.
+
+3) Ventajas de HTML5:
+Es gratuito
+Multimedia sin complementos
+Mejor rendimiento
+Compatibilidad móvil
+Mejor semántica
+API nuevas y útiles
+Optimización para aplicaciones web
+Mejor soporte de navegador 
+Almacenamiento mejorado

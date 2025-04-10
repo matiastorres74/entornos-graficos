@@ -1,0 +1,53 @@
+
+<!--- Ejercitación 1
+1)HTML(HyperText Markup Language) es el lenguaje de marcado estándar para el desarrollo de paginas web que fue creado en 1990,
+        desde su creación existieron nuevas versiones que ayudaron a que siga vigente, estas fueron:
+HTML 1.0 (1991): La primera versión, solo tenía texto y enlaces.
+HTML 2.0 (1995): Agregó formularios y se convirtió en estándar oficial.
+HTML 3.2 (1997): Introdujo soporte básico para CSS.
+HTML 4.01 (1999): Separó el diseño (CSS) del contenido (HTML).
+XHTML 1.0 (2000): Versión más estricta basada en XML.
+Y por ultimo
+HTML5 (2014): La versión moderna con multimedia, etiquetas semánticas y APIs. 
+
+2) El W3C (World wide web Consortium) recomienda una serie de principios basicos para la creacion de documentos con HTML,
+    con el objetivo de garantizar que las paginas web sean accesibles, funcionales, semanticaas y compatibles con diferentes dispositivos y navegadores.
+    Estos principios se centran en la calidad del codigo, la accesibilidad y la usabilidad.
+    Las mas importantes:
+    a) Estructura semantica
+    b) Accesibilidad
+    c) Separacion de contenido
+    d) Uso correcto de hipervinculos
+    e) Codificacion y caracteres
+
+3) Un elemento o atributo obsoleto es aquel que ha sido eliminado oficialmente de la especificación.Ya no debe usarse bajo ninguna circunstancia, 
+        y su soporte en navegadores es limitado o inexistente.
+    Un elemento o atributo desaprobado todavía funciona en los navegadores actuales, pero ya no se recomienda usarlo, 
+        porque puede ser eliminado en futuras versiones, tiene alternativas mejores y va en contra de buenas practicas.
+
+
+4) DTD significa Document Type Definition (Definición de Tipo de Documento). El DTD especifica qué elementos y atributos están permitidos en el documento, su jerarquía y las reglas de validación.
+El DTD define la estructura y las reglas que debe seguir el código HTML 
+    de una página para ser considerado válido por los navegadores y validadores.
+La especificación de HTML 4.01 (publicada por el W3C en 1999) contempla tres tipos de DTDs:
+    a) Strict (Estricto); No permite elementos ni atributos desaprobados.Se enfoca en el uso correcto y semántico de HTML.Ideal para código limpio y moderno (según los estándares de esa época).
+    b) Transitional (Transicional);Permite elementos y atributos desaprobados.Diseñado para desarrolladores que estaban migrando desde versiones antiguas.Acepta cosas como el uso de <font>, align, etc.
+    c) Frameset DTD: Está destinado a documentos que utilizan frames, permitiendo la estructura necesaria para definir páginas con framesets, que eran populares en los primeros días de la web. Permite el uso de elementos como <frameset> y <frame>.
+
+5)Los metadatos son información sobre el documento que no se muestra directamente en la página web, pero que es clave para navegadores, motores de búsqueda (SEO) y otras tecnologías. 
+    Definen:
+    a) Codificación de caracteres.
+    b) Descripción y autoría (para SEO).
+    c) Vista adaptable (responsive design).
+    d) Comportamiento de navegadores y robots.
+
+    Se definen dentro de la etiqueta <head> del documento, principalmente con la etiqueta <meta> (tambien se pueden usar <title> o <link>):
+
+1. Etiqueta <meta> (principales usos)
+    a) Codificación de caracteres (obligatorio para evitar errores de renderizado):<meta charset="UTF-8">
+    b) Descripción (SEO):<meta name="description" content="Página sobre estándares web del W3C">
+    c) Palabras clave (SEO, aunque hoy menos relevante):<meta name="keywords" content="HTML, W3C, metadatos, web">
+    d) Autor:<meta name="author" content="Nombre del autor">
+    e) Viewport (responsive design):<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    -->

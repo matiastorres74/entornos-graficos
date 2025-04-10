@@ -1,0 +1,237 @@
+En cada caso, explicar las diferencias entre los segmentos de código y sus visualizaciones:
+3.a)
+1. <a href="http://www.google.com.ar">Click aquí para ir a Google</a>
+2. <a href="http://www.google.com.ar" target="_blank">Click aquí para ir a Google</a>
+3. <a href="http://www. google.com.ar" type="text/html" hreflang="es" charset="utf-8" rel="help">
+4. <a href="#">Click aquí para ir a Google</a>
+5. <a href="#arriba">Click aquí para volver arriba</a>
+6. <a name="arriba" id="arriba"></a>
+
+1. Enlace estándar:
+Visualización: Texto azul subrayado (estilo predeterminado de enlace).
+Comportamiento: Al hacer clic, redirige a Google en la misma pestaña.
+Atributos: href="http://www.google.com.ar": Define la URL de destino del enlace.
+
+2. Enlace con apertura en nueva pestaña
+Diferencia vs 1: Abre el enlace en una nueva pestaña/ventana gracias a target="_blank".
+Comportamiento: El enlace abre la página de Google en una nueva ventana o pestaña.
+Atributos:target="_blank": Define cómo se abre el enlace (no obligatorio).
+          href="http://www.google.com.ar": Define la URL de destino del enlace.
+
+3. Enlace con metadatos avanzados
+Visualizacion: El texto "Click aquí para ir a Google" aparecerá igual que los otros enlaces, pero los atributos adicionales no cambiarán la forma en que se muestra visualmente.
+Comportamiento: El enlace se comportará como los anteriores, redirigiendo a la página de Google, pero con información adicional sobre el tipo de contenido, idioma, codificación y relación de ayuda.
+Atributos:href="http://www.google.com.ar": Define la URL de destino del enlace.
+          type="text/html", hreflang="es", charset="utf-8", rel="help": Atributos adicionales que no afectan el comportamiento visual inmediato del enlace pero proporcionan información adicional al navegador.
+
+4. Enlace a "#" (página actual)
+Diferencia vs 1 y 2: No redirige a una URL externa. Al hacer clic, recarga la página actual (útil para botones con JavaScript).
+Comportamiento: No ocurre nada al hacer clic (a menos que esté combinado con JavaScript para realizar una acción dentro de la misma página).
+Atributos:href="#": Indica que el enlace no tiene un destino real.
+
+5. Enlace interno a un ancla
+Visualización: Se ve como un enlace. Al hacer clic, desplaza la página hasta el elemento con ese id.
+Comportamiento: Enlace interno, que lleva a un elemento con id="arriba" dentro de la misma página HTML.
+Atributos: href="#arriba": Enlace al elemento con id="arriba" o name="arriba".
+
+6. Destino de ancla (marcador)
+Visualización: No muestra nada visualmente, solo marca una posición en la página.
+Comportamiento: Define un ancla interna con nombre arriba, que permite que otros enlaces (como el anterior) se desplacen hacia aquí.
+Atributos: name="arriba": Usado en HTML 4 para anclas.
+           id="arriba": Recomendado en HTML5 como identificador único.
+
+3.b)
+1. <p><img src="im1.jpg" alt="imagen1" /><a href="http://www.google.com.ar">Click aquí</a></p>
+2. <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> Click aquí</p>
+3. <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" />Click aquí</a></p>
+4. <p><a href="http://www.google.com.ar"><img src="im1.jpg" alt="imagen1" /></a> <ahref="http://www.google.com.ar">Click aquí</a></p>
+
+1. Imagen y enlace como elementos separados
+Visualización: La imagen (im1.jpg) y el enlace ("Click aquí") aparecen uno al lado del otro dentro del mismo párrafo.
+No hay relación funcional entre ellos: la imagen no es clickeable.
+Estructura: <img> y <a> son elementos hermanos.
+
+2. Imagen como enlace + texto fuera del enlace
+Diferencia vs 1: La imagen es clickeable (envía a Google).
+El texto "Click aquí" está fuera del enlace (no es clickeable).
+Visualización: Imagen subrayada (estilo de enlace predeterminado en algunos navegadores).
+
+3. Imagen y texto dentro del mismo enlace
+Diferencia vs 2: Tanto la imagen como el texto son clickeables (forman parte del mismo enlace).
+Visualización: El texto "Click aquí" hereda el estilo de enlace (azul subrayado).
+Características: Mejor para accesibilidad y UX (área clickeable más grande).
+
+4. Imagen y texto en enlaces separados
+Visualización: imagen clickeable, texto clickeable
+Comportamiento: 2 enlaces separados que llevan a Google: uno con imagen y otro con texto. Ambos elementos son independientes pero funcionalmente iguales.
+Características: Ofrece más flexibilidad de diseño: el usuario puede elegir si hacer clic en la imagen o el texto.
+
+3.c)
+1. Lista no Ordenada
+Comportamiento: Crea una lista con viñetas (puntos negros por defecto), sin ningún orden numérico.
+Características: Se usa para listas donde el orden no importa. Las viñetas pueden cambiar con CSS.
+
+2. Lista Ordenada
+Comportamiento: Crea una lista numerada automáticamente.
+Características: El orden sí importa. Se puede personalizar con atributos como type="A" (letras), start="5" (número inicial), etc.
+
+3. Listas ordenadas separadas con value
+Comportamiento: Son tres listas separadas, pero cada <li> tiene un value para forzar el número de inicio. 
+Características: value en <li> permite especificar el número que debe mostrarse. Útil cuando no podés usar una sola lista por razones estructurales, pero querés que el número siga secuencia.
+
+4. Simulación de lista numerada con <blockquote>
+Comportamiento: Simula una lista numerada usando texto plano dentro de un párrafo. <blockquote> indenta el texto (cita o referencia).
+Características: No es una lista semántica real. No es accesible para lectores de pantalla. No se puede modificar fácilmente con CSS como las listas <ul> o <ol>.
+
+3.d) 
+1. Estructura Semántica con <th> 
+Encabezado: Usa <th> para definir encabezados.
+Accesibilidad:Mejor: lectores de pantalla reconocen <th>
+Estilo:Necesita CSS para centrar/estilizar <th>.
+Atributos Obsoletos: Solo border y width 
+Visualización:Similar, pero <th> suele tener estilo predeterminado (negrita y centrado en muchos navegadores).
+
+2. Estructura No Semántica con <td> y Estilos en Línea
+Encabezado: Usa <td> con <strong> y estilos en línea.
+Semantica Incorrecta: los encabezados no son identificables semánticamente.
+Accesibilidad:Peor: los lectores no detectan encabezados.
+Estilo:Centrado y negrita con HTML obsoleto (align).
+Atributos Obsoletos: ="center" (obsoleto en HTML5).
+Visualizacion:El texto está centrado y en negrita por el <div> y <strong>.
+
+
+3.e)
+1.Tabla con <caption>
+Ubicación del título: Arriba de la tabla.
+                      <caption>: Define un título visible encima de la tabla.
+Centrado: automático.
+Cantidad de columnas: 2.
+                      <td>: Celdas de datos (2 columnas).
+                      bgcolor="#dddddd": Color de fondo gris claro.
+                      &nbsp;: Espacio no rompible para que la celda no esté vacía (se vea el color).
+Accesibilidad / semantica: muy buena por usar caption.
+Recomendado?: <caption> recomendado para títulos.
+
+2. Tabla con <div align="center"> y colspan
+Ubicación del título: Primera fila dentro de la tabla. (columnas unidas)
+                      <td colspan="3">: Une tres columnas en una sola celda.
+Centrado: Manual con align="center"
+          <div align="center">Título</div>: Centra el texto del título dentro de la celda.
+Cantidad de columnas: 3,  todas con fondo gris claro (bgcolor="#dddddd").
+Accesibilidad / semántica: Más visual, pero no semántico.
+Recomendado?: Válido, pero más usado para subtítulos u otros datos.
+
+
+3.f)
+1. Tabla con <table width="200">, <tr> y <td>
+Visualizacion: Fila 1: La primera fila tiene una celda (<td colspan="3">) que ocupa todo el ancho de la tabla (200 px) 
+                con el texto "Título" centrado.
+              Fila 2 y 3: Ambas filas tienen celdas con el fondo gris (bgcolor="#dddddd"), pero la celda en la primera
+              columna se extiende hacia abajo cubriendo ambas filas gracias al rowspan="2". Las otras celdas en la fila 
+              2 y 3 están distribuidas normalmente, con el mismo color de fondo gris.
+2. Tabla con <table width="200">, <tr> y <td>
+Visualizacion:  Fila 1: La primera fila tiene una sola celda que ocupa todo el ancho de la tabla (200 px), mostrando el texto "Título" centrado en toda la fila.
+                Fila 2: En la segunda fila, la primera celda ocupa dos columnas debido a colspan="2", y la tercera columna tiene una celda separada. Ambas celdas tienen fondo gris claro.
+                Fila 3: En la tercera fila, hay tres celdas, cada una ocupando una columna y con el fondo gris claro.
+
+
+
+3.g)
+1.Tabla 1: Estructura Compleja con colspan y rowspan
+Columnas en Título:colspan="3" (ocupa 3 columnas).
+Celdas Combinadas:Usa colspan="2" y rowspan="2" en la segunda fila.
+Ancho de Celda: width="50%" en la última celda
+Espaciado Interno:No especificado (valor predeterminado).
+Espaciado entre Celdas:No especificado (valor predeterminado).
+Atributos Obsoletos:border, width, align (obsoletos en HTML5).
+ 
+Tabla 2: Estructura Simplificada con cellpadding y cellspacing
+Columnas en titulo: ="2" (ocupa 2 columnas).
+Celdas com binadaas: solo rowspan="2" en la segunda fila.
+Ancho de celda: ="50%" en la última celda.
+Espaciado interno="0" (sin relleno interno)
+Espaciado entre Celdas: ="0" (sin espacio entre celdas).
+Atributos obsoletos:border, width, align, cellpadding, cellspacing (obsoletos en HTML5).
+
+
+
+
+
+3.h)
+1. Formulario con método POST a procesar.php
+Características:
+                Usa <fieldset> y <legend> para agrupar los datos del formulario y darles un título visible.
+                Los campos tienen IDs y nombres únicos, y valores por defecto (value="xxx").
+                Envío a: procesar.php (se espera un archivo en el servidor para procesar).
+                Método de envío: POST, los datos no aparecen en la URL.
+                target="_blank" abre el resultado en una nueva pestaña.
+Visualizacion: Usa caja con borde (fieldset) y título (legend). Se ve estructurado.
+
+2. Formulario con método GET, usando <label>
+Características:
+                No tiene fieldset ni legend; solo texto suelto: "LOGIN".
+                Usa etiquetas <label> para asociar texto a los campos: mejora la accesibilidad.
+                Método de envío: GET, los datos se envían por URL.
+                Envío a: (action="") se envía a la misma página.
+                Abre en nueva pestaña.
+Visualizacion: No tiene agrupamiento visual. Sólo texto suelto. El campo de clave no está oculto. Esteticamente más plano que el 1 y 3.
+
+3. Formulario que se envía por correo (mailto)
+Características:
+                Usa también <fieldset> y <legend> como el Formulario 1.
+                Usa action="mailto:...": intenta abrir el cliente de correo del usuario.
+                enctype="text/plain" indica que el contenido se enviará como texto plano.
+                El botón es type="reset" : No envía el formulario, solo borra los datos.
+                Método de envío: POST, pero su eficacia depende del cliente de correo del usuario.
+                Envía a: cliente de correo electrónico.
+Visualización: Visualmente estructurado. Pero el botón no actúa como "Enviar".
+
+3.i)
+Botón 1: Etiqueta <button> con contenido HTML
+Contenido: Permite HTML interno (imágenes, texto formateado, saltos de línea).
+Flexibilidad Visual: Alta: puede incluir imágenes (<img>) y estilos en HTML (<b>, <br>).
+Accesibilidad: Mejor: el atributo alt en la imagen ayuda a lectores de pantalla.
+Atributos: Soporta name, id, type, y otros atributos globales.
+Uso con Formularios: Ideal para acciones complejas (ej: enviar formularios con íconos).
+Estilización con CSS: Más versátil (puede estilizar elementos internos).
+
+Boton 2:Etiqueta <input type="button"> con texto plano
+Contenido: Solo acepta texto plano (atributo value).}
+Flexibilidad Visual: Limitada: solo texto sin formato.
+Accesibilidad: Básica: depende del texto en value.
+Atributos: Similar, pero con value para el texto.
+Uso con Formularios: Mejor para acciones simples.
+Estilización con CSS: Menos flexible (solo el botón en sí).
+
+3.j)
+Segmento 1: Radio Buttons Agrupados Correctamente
+Atributo Name: Mismo valor (name="opcion") para ambos.
+Agrupación Lógica: Los radio buttons funcionan como grupo (solo se puede seleccionar uno).
+Usabilidad: Comportamiento esperado para opciones mutuamente excluyentes.
+Accesibilidad: Correcta: lectores de pantalla los reconocen como opciones del mismo grupo.
+
+Segmento 2: Radio Buttons No Agrupados (Error Común)
+Atributo Name: Valores diferentes (opcion1 y opcion2).
+Agrupación Lógica: No son un grupo (se pueden seleccionar ambos).
+Usabilidad: Comportamiento confuso (similar a checkboxes).
+Accesibilidad: Problema: no se identifica la relación entre ellos.
+
+
+3.k)
+1. 	Lista con una única opción
+Características:
+                <select name="lista">: Crea una lista desplegable donde el usuario puede elegir una sola opción.
+                <optgroup> con label: Agrupa visualmente los <option> bajo un título. Mejora la organización del menú.
+                <option>: Son los elementos seleccionables: "Mayo" y "Junio", en ambos grupos.
+Visualización:
+              El usuario verá una única lista desplegable con secciones.
+              Puede seleccionar solo una opción a la vez.
+
+2. Lista con múltiples opciones
+Características:
+                multiple="multiple": Permite al usuario seleccionar varias opciones.
+                name="lista[]": Usa corchetes ([]) para que, al enviarse el formulario, el servidor reciba los valores como un array/lista de datos.
+                Mismo uso de <optgroup> y <option> que el caso anterior.
+Visualización:
+              El <select> ya no se muestra como lista desplegable, sino como una caja expandida con múltiples líneas visibles (Caja con scroll y selección múltiple).
+              Los usuarios pueden hacer selecciones múltiples entre todos los grupos y opciones.  
