@@ -1,0 +1,48 @@
+* {
+  color: green;
+}
+
+a:link {
+  color: gray
+}
+
+a:visited {
+  color: blue
+}
+
+a:hover {
+  color: fuchsia
+}
+
+a:active {
+  color: red
+}
+
+p {
+  font-family: arial, helvetica;
+  font-size: 10px;
+  color: black;
+}
+
+.contenido {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/*
+El p tiene clase .contenido, que establece: font-size: 14px font-weight: bold
+Pero también tiene un style="font-weight: normal;", que anula la negrita, porque el estilo en línea tiene mayor
+prioridad (es más específico). Por lo tanto: El tamaño de letra del párrafo será 14px (por la clase .contenido)
+El peso de la fuente será normal (porque el estilo en línea sobrescribe a la clase)
+El enlace dentro de <td> se verá: De color gris si no se ha visitado (por a:link) Azul si fue visitado (a:visited) Fucsia si se pasa el mouse encima (a:hover) Rojo al hacer clic (a:active)
+El color verde del * {color: green;} es sobrescrito por: p {color: black;} en el párrafo a:link, etc., para los enlaces 
+El <td> sí hereda color verde si no se especifica otro.
+
+La clase contenido está aplicada al <body>, por lo que todos los elementos dentro del <body> heredan las propiedades posibles de .contenido,
+es decir: font-size: 14px font-weight: bold 
+El <p> no tiene estilo en línea ni clase propia, pero hereda: font-size: 14px desde el <body class="contenido">
+Sin embargo, como hay una regla específica para p {font-size: 10px;}, esta anula la herencia. Resultado: el <p> tendrá: 
+Tamaño 10px Peso bold (por herencia de .contenido) Color negro. El enlace se comporta igual que antes.
+Las celdas (<td>) heredarán font-size: 14px y font-weight: bold desde el <body class="contenido">, ya que no hay reglas específicas para td.
+*/
+

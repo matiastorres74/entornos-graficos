@@ -1,0 +1,51 @@
+Ejercicio 1: Responder
+1. ¿ Qué es CSS y para qué se usa?
+    CSS (Cascading Style Sheets) es un lenguaje que se usa para dar estilo a las páginas web. 
+    Sirve para definir cómo se ven los elementos HTML, como colores, tamaños de letra, márgenes, 
+    posiciones, fondos, etc. Básicamente, se encarga de la parte visual del sitio web,
+    haciéndolo atractivo, ordenado, y adaptable para los diversos dispositivos.
+    
+2. CSS utiliza reglas para las declaraciones de estilo, ¿cómo funcionan?
+    Podemos asociar las reglas de estilo a las marcas HTML de tres maneras:
+❑ directamente a la marca,
+❑ en el head de la página
+❑ o agrupar las reglas de estilo en un archivo independiente
+con extensión *.css
+
+3. ¿ Cuáles son las tres formas de dar estilo a un documento?
+Las tres formas principales de dar estilo a un documento HTML usando CSS son:
+  CSS en línea (Inline CSS): Se aplica directamente en la etiqueta HTML usando el atributo style.
+  CSS interno (Internal CSS): Se escribe dentro del mismo archivo HTML, dentro de la etiqueta <style> ubicada en la cabecera (<head>).
+  CSS externo (External CSS): Se crea un archivo .css separado y se vincula al documento HTML mediante la etiqueta <link>.
+
+4. ¿ Cuáles son los distintos tipos de selectores más utilizados?
+Ejemplifique cada uno.
+Los selectores en CSS se usan para elegir qué elementos HTML queremos estilizar. 
+Algunos de los más utilizados son: 
+    Selector de etiqueta: aplica estilos a todas las etiquetas de un tipo, por ejemplo p {} para todos los párrafos.
+    Selector de clase: usa un punto (.) antes del nombre y se aplica a los elementos con esa clase, por ejemplo .boton {}.
+    Selector de ID:  usa un signo # y se aplica a un elemento con un ID específico, por ejemplo #header {}.
+    Selector universal: usa un asterisco (*) y selecciona todos los elementos de la página.
+    Selector descendiente: selecciona elementos dentro de otros, por ejemplo nav a {} aplica a todos los enlaces dentro de un nav.
+    Selector de grupo: permite aplicar el mismo estilo a varios elementos, por ejemplo h1, h2, h3 {}.
+    Selector de atributos: permiten seleccionar elementos según sus atributos, por ejemplo input[type="text"] {}.
+
+5. ¿ Qué es una pseudo-clase? Cuáles son las más utilizadas aplicadas a vínculos?
+Una pseudo-clase es una palabra clave que se agrega a un selector, precedida por dos puntos :, para estilizar un elemento cuando está en un estado particular.
+Las más utilizadas en vínculos son:
+- ":link" (utilizada cuando el enlace aún no ha sido visitado)
+- ":visited" (cuando el enlace ya ha sido visitado)
+- ":hover" (cuando el usuario pasa el cursor sobre el enlace)
+- ":active" (cuando el enlace está siendo clickeado)
+
+6. ¿ Qué es la herencia?
+En CSS, la herencia es el mecanismo mediante el cual algunos estilos aplicados a un elemento se transfieren 
+automáticamente a sus elementos hijos (descendientes), sin necesidad de volver a declararlos.
+No todos los estilos se heredan. Solo ciertas propiedades lo hacen por defecto, como: color, font-family, font-size,
+line-height, visibility, text-align. Propiedades como margin, padding, border, background, etc., no se heredan automáticamente.
+
+7. ¿ En qué consiste el proceso denominado cascada?
+El proceso de cascada en CSS es el mecanismo que utiliza el navegador para determinar qué reglas de estilo aplicar 
+cuando existen múltiples reglas que afectan al mismo elemento HTML.
+La "cascada" hace referencia al modo en que CSS resuelve conflictos entre distintas reglas para decidir cuál tiene prioridad.
+

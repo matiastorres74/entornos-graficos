@@ -1,0 +1,18 @@
+/* Analizar el siguiente código señalando declaraciones y aplicaciones de reglas, y su efecto. */
+p.quitar {
+    color: red;
+    }
+*.desarrollo {
+    font-size: 8px;
+    }
+.importante {
+    font-size: 20px;
+    }
+
+
+/*
+La primer regla p.quitar hace las declaraciones (color: red;) y su efecto es que el texto tendrá color rojo. Solo para los parrafos <p>, no para titulos <h>.
+La segunda regla .desarrollo hace la declaracion del tamaño del texto(font-size: 8px);
+La tercer regla .importante lo que hace es aumentar el tamaño de la fuente(font-size:20px;), intentando marcar su "importancia".
+
+*/
