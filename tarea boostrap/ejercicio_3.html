@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+<style>
+    .header { background-color: #b084b8; height: 100px; }
+    .sidebar { background-color: #f5d9d4; height: 400px; }
+    .barra-verde { background-color: #72c28b; height: 60px; }
+    .caja-gris { background-color: #9a8c98; height: 80px; margin-bottom: 10px; }
+    .caja-celeste { background-color: #89a9d4; height: 120px; }
+</style>
+
+<body>
+<div class="container-fluid">
+    <div class="row me-2">
+        <div class="col-12 header m-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-2 sidebar m-1">
+            <button type="button" class="btn btn-primary ms-3 mt-2" data-bs-toggle="modal" data-bs-target="#miModal">
+                Boton
+            </button>
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Encabezado del modal -->
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="miModalLabel">Modal</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+            
+                    <!-- Cuerpo del modal -->
+                    <div class="modal-body">
+                        ¿Querés guardar los cambios?
+                    </div>
+            
+                    <!-- Pie del modal con botones -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-success">Guardar cambios</button>
+                    </div>
+            
+                </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-9">
+            <div class="row me-1">
+            <div class="col-sm-12 barra-verde m-2">
+                <div class="alert alert-success" role="alert">Alerta!</div></div>
+            </div>
+            <div class="row">
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            <div class="col-6 col-sm-4 mt-2"><div class="caja-gris"></div></div>
+            </div>
+            <div class="row">
+                <div class="col-6 col-sm-4 mt-2"><div class="caja-celeste"></div></div>
+                <div class="col-6 col-sm-8 mt-2"><div class="caja-celeste">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuA1hlJVvw9TxSodwlBGei9f3wxmMNwDp_KQ&s" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRO3lOi5pa0IHvhssVg0iv2v6tY27RmDozQGA&s" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div></div>
+            </div>
+            <div class="card mt-5" style="width: 16rem;">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/1200px-HTML5_logo_and_wordmark.svg.png" class="card-img-top" alt="">
+                <div class="card-body">
+                    <h5 class="card-title">HTML</h5>
+                    <p class="card-text">hyper text marked language</p>
+                    <a href="#" class="btn btn-primary">Go home</a>
+                </div>
+            </div>
+        </div> 
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <div class="input-group m-1 me-1">
+            <span class="input-group-text">First and last name</span>
+            <input type="text" aria-label="First name" class="form-control">
+            <input type="text" aria-label="Last name" class="form-control">
+        </div>
+        <div class="form-group m-1">
+            <label for="exampleInputEmail1">Email</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+            
+        </div>
+        <div class="form-group m-1">
+            <label for="example">Telefono</label>
+            <input type="text" class="form-control" id="Telefono" aria-describedby="Telefono">
+            
+        </div>
+        <div class="form-group m-1">
+            <label for="example">Asunto</label>
+            <input type="text" class="form-control" id="Asunto" aria-describedby="Asunto">
+            
+        </div>
+        <div class="form-group m-1">
+            <label for="example">Cuerpo de Mensaje</label>
+            <input type="textarea" class="form-control" id="Cuerpo" aria-describedby="Cuerpo">
+            
+        </div>
+        
+        <button type="submit" class="btn btn-primary m-1">Submit</button>
+        </form>
+</body>
+</html>
